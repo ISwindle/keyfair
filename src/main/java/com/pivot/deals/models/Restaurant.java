@@ -1,4 +1,7 @@
-package com.pivot.deals;
+package com.pivot.deals.models;
+
+import com.pivot.deals.models.Deal;
+import com.pivot.deals.models.Location;
 
 import java.util.ArrayList;
 
@@ -11,7 +14,7 @@ public class Restaurant {
     public Restaurant(int id, String name, Location location) {
         this.id = id;
         this.name = name;
-        this.deals = new ArrayList<Deal>();
+        this.deals = new ArrayList<>();
         this.location = location;
     }
 

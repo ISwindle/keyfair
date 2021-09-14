@@ -1,9 +1,14 @@
-package com.pivot.deals;
+package com.pivot.deals.controllers;
 
+import com.pivot.deals.models.Restaurant;
+import com.pivot.deals.models.Location;
+import com.pivot.deals.models.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import com.pivot.deals.services.LocationService;
 
 @Controller
 public class GreetingController {
@@ -22,7 +27,7 @@ public class GreetingController {
 
         Restaurant restaurant = new Restaurant(1, "Burger King", new Location(50.0, 50.0));
 
-        Double distance = Location.haversine(user.location.getY(), user.location.getX(),
+        Double distance = LocationService.haversine(user.location.getY(), user.location.getX(),
                 restaurant.location.getY(), restaurant.location.getX());
 
         model.addAttribute("name", name);

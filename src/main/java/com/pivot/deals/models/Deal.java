@@ -1,4 +1,4 @@
-package com.pivot.deals;
+package com.pivot.deals.models;
 
 import java.util.Date;
 

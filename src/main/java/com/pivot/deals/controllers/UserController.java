@@ -1,7 +1,8 @@
-package com.pivot.deals;
+package com.pivot.deals.controllers;
 
 import java.util.List;
 
+import com.pivot.deals.models.User;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
