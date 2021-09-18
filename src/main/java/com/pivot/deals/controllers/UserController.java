@@ -12,6 +12,8 @@ public class UserController {
     @GetMapping
     public List<User> getUser(@RequestParam(name="name", required=false) String name, Model model) {
         User user = new User();
+        //Use UserService
+        //Add User to Model
         return List.of(user);
     }
 
